@@ -1,0 +1,68 @@
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      
+
+    }
+
+    .stopwatch {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .time {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      flex: 1 1 30%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      background-color: #19b192;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #158d75;
+    }
+
+    @media (max-width: 500px) {
+      .time {
+        font-size: 2.5em;
+      }
+
+      button {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+    }
